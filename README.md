@@ -15,7 +15,7 @@ This command makes a directory named `<file>_saved` in the directory where `<fil
 - `mimetypes.guess_type()`は余り用いられない拡張子を返す場合があったり(`image/jpeg`に対し`.jpe`など)、非標準のMIMEタイプ(けれどそれなりに用いられている)に対応してなかったりする(`image/jpg`など)ので、人力で用意した辞書に存在しない場合の最終手段としてのみ利用
 
   Since `mimetypes.guess_type()` does not necessarily output the most common extension (e.g. `image/jpeg` → `.jpe`)
-and non-standard MIME types (yet in use) are ignored (e.g. `image/jpg`), this program use the original dictionary prior to `mimetypes.guess_type()`.
+and non-standard MIME types (yet in use) are ignored (e.g. `image/jpg`), this program uses a dictionary prior to `mimetypes.guess_type()`.
 
 - 画像を抽出するために書いたものなので、今のところ用意した辞書は画像に関する小規模なもの
 
